@@ -1,23 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
+import "./Bio.css";
 
 const Bio = () => {
   const styling = {
     paddingBottom: 20
   };
   return (
-    <div style={styling}>
+    <div className="container" style={styling}>
       <div className="row">
-        <div className="col-md-6 col-sm-12" style={styling}>
-          <h1>
+        <div className="col-md-6 col-sm-12 bio-para">
+          <p>
             Premium covers for MacBooks, iPhone and iPad made out of real high
             quality wood.
-          </h1>
+          </p>
         </div>
-        <div className="col-md-6 col-sm-12">
-          <h1>
+        <div className="col-md-6 col-sm-12 bio-para">
+          <p>
             Premium covers for MacBooks, iPhone and iPad made out of real high
             quality wood.
-          </h1>
+          </p>
         </div>
       </div>
     </div>
