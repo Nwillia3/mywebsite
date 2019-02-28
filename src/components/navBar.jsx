@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-branded" href="#">
-        Navbar
+        NW
       </a>
       <div className="ml-auto ">
         <a className="navbar-branded" href="#">
