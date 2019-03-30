@@ -1,10 +1,10 @@
 import React from "react";
 import "./ProjectCard.css";
 
-const Project = ({ header, image, github, description }) => {
+const Project = ({ header, image, url, description }) => {
   return (
     <div className="carded">
-      <img src={image} alt="/" className="card-img-top" />
+      {/* <img src={image} alt="/" className="card-img-top" /> */}
 
       <div className="card-body">
         <div className=""> {header}</div>
@@ -22,15 +22,3 @@ const Project = ({ header, image, github, description }) => {
 };
 
 export default Project;
-
-// <div className="card-body">
-//         <h5 className="card-title">{header}</h5>
-//         <p className="card-text"> Some card text</p>
-
-//         <a href={github} target="_blank" className="card-link">
-//           Card link
-//         </a>
-//         <a href="#" className="card-link">
-//           Another link
-//         </a>
-//       </div>

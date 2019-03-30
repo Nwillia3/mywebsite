@@ -1,5 +1,6 @@
 import React from "react";
-import "./projectTitle.css";
+import "../styles/projectTitle.css";
+
 const ProjectTitle = () => {
   return (
     <div className="text-center" style={{ padding: 20 }}>

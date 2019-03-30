@@ -1,67 +1,45 @@
 import React, { Component } from "react";
 import Project from "./project";
-import { ENGINE_METHOD_DIGESTS } from "constants";
+import data from "../common/data";
 
 class Projects extends Component {
   state = {
-    portfolio: {
-      titles: [
-        "Vidly",
-        "Flix & Chill",
-        "Career Hunter",
-        "Book list",
-        "Dice Game",
-        "Palindrome Checker",
-        "Word Beater",
-        "Snkr Api"
-      ],
-      github: [
-        "https://github.com/Nwillia3/vidly",
-        "https://github.com/Nwillia3/Flix-Chill",
-        "https://github.com/Nwillia3/careerhunter",
-        "https://github.com/Nwillia3/BookList2019",
-        "https://github.com/Nwillia3/diceGame",
-        "https://github.com/Nwillia3/PalindromeChecker",
-        "https://github.com/Nwillia3/wordbeater",
-        "https://github.com/Nwillia3/apiSnkr"
-      ],
-      description: [
-        "this is app 1",
-        "this is app 2",
-        "this is app 3",
-        "this is app 4",
-        "this is app 5",
-        "this is app 6",
-        "this is app 7",
-        "this is app 8"
-      ],
-      imageUrl: "https://picsum.photos/200/?random"
-    }
+    portfolio: { data }
   };
 
   renderUrl = url => {
-    return this.state.portfolio.github[url];
+    return this.state.portfolio.data.url;
   };
 
   renderDescription = text => {
     return this.state.portfolio.description[text];
   };
   render() {
-    const { titles, imageUrl, github } = this.state.portfolio;
+    const { data } = this.state.portfolio;
     return (
       <div className="container">
         <div className="row">
-          {titles.map(pro => (
+          {data.map(pro => (
             <div className="col-md-4 col-sm-12">
               <Project
-                header={pro}
-                image={imageUrl}
-                github={this.renderUrl(titles.indexOf(pro))}
-                description={this.renderDescription(titles.indexOf(pro))}
+                header={pro.title}
+                url={pro.url}
+                description={pro.title}
               />
               <br />
             </div>
           ))}
+          {/* {titles.map(pro => (
+            <div className="col-md-4 col-sm-12">
+              <Project
+                header={pro}
+                image={imageUrl}
+                github={this.renderUrl(titles.indexOf(github))}
+                description={this.renderDescription(titles.indexOf(pro))}
+              />
+              <br />
+            </div>
+          ))} */}
         </div>
       </div>
     );
@@ -69,46 +47,3 @@ class Projects extends Component {
 }
 
 export default Projects;
-
-// <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
-//           <div className="col-md-4 col-sm-12">
-//             <Project
-//               header="this is a prop"
-//               image="https://picsum.photos/200/?random"
-//             />
-//           </div>
