@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Project from "./pgroject";
+import Project from "./project";
 import { data, miniProjects } from "../common/data";
 import ProjectTitle from "../components/project-title";
 import "../styles/project.css";
