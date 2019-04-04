@@ -8,7 +8,7 @@
 }
 
 .header-primary {
-  font-size: 32px;
+  font-size: 45px;
   font-family: "Arial Black";
 }
 
@@ -18,16 +18,22 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .header-primary {
+    font-size: 45px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .header-primary {
+    font-size: 55px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .header-primary {
-    font-size: 45px;
+    font-size: 73px;
   }
 }
 
