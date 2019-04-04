@@ -12,33 +12,31 @@ const Principles = () => {
         <div className="" id="item">
           <h3>Results Focused</h3>
           <p>
-            You have business goals you need to achieve. I have the knowledge
-            and expertise to help you design extraordinary digital products that
-            meet those goals.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer
           </p>
         </div>
         <div className="" id="item">
           <h3> Open Minded</h3>
           <p>
-            You share ideas about your product. I refine and polish those ideas
-            into powerful, high-fidelity designs that will enhance your users
-            experience.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer
           </p>
         </div>
         <div className="" id="item">
           <h3>Adaptable Approach</h3>
           <p>
-            You work in a fast-moving and unpredictable environment. I’m
-            flexible enough to deal with those changes and still meet your
-            deadlines.
+            I like to work in a fast-moving and unpredictable environment. I’m
+            flexible enough to deal with those changes and still meet deadlines.
           </p>
         </div>
         <div className="" id="item">
           <h3>Straightforward Thinking</h3>
           <p>
-            You need a simple, clear approach to designing your product. I
-            provide ideas, recommendations, and expert advice to help you
-            achieve that.
+            I use a simple, clear approach to building product. I can provide
+            ideas, recommendations, and advice to help you achieve that.
           </p>
         </div>
       </div>

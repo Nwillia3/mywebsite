@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import NavBar from "../components/navBar";
-import Header from "../components/header";
-// import Bio from "../components/bio";
-// import ProjectTitle from "../components/project-title";
-import Projects from "../common/Projects";
+import NavBar from "../components/NavBar";
+import Header from "../components/Header";
 import Principles from "../components/Principles";
 import About from "../components/About";
+import Projects from "../common/Projects";
 
 class Home extends Component {
   state = {};
@@ -14,8 +12,6 @@ class Home extends Component {
       <React.Fragment>
         <NavBar />
         <Header />
-        {/* <Bio /> */}
-        {/* <ProjectTitle /> */}
         <Projects />
         <About />
         <Principles />

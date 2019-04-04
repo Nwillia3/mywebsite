@@ -11,16 +11,9 @@ class Projects extends Component {
     demos: { miniProjects }
   };
 
-  // renderUrl = url => {
-  //   return this.state.portfolio.data.url;
-  // };
-
-  // renderDescription = text => {
-  //   return this.state.portfolio.description[text];
-  // };
   render() {
     const { data } = this.state.portfolio;
-    const { miniProjects } = this.state.demos;
+    // const { miniProjects } = this.state.demos;
     return (
       <div className="container Project">
         <ProjectTitle />
