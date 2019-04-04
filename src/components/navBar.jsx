@@ -17,6 +17,7 @@ const NavBar = () => {
           className="navbar-branded"
           href="https://www.linkedin.com/in/neilwilliams9/"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon icon={["fab", "linkedin"]} />
         </a>
@@ -25,6 +26,7 @@ const NavBar = () => {
           className="navbar-branded"
           href="https://github.com/nwillia3"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
