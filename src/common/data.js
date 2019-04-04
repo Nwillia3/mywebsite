@@ -1,43 +1,83 @@
-const projects = [
+export const data = [
   {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Xoolo",
+    url: "https://xoolo.herokuapp.com",
+    github: "https://github.com/Nwillia3/xoolo",
+    img: "../images/xoolo.png",
+    description:
+      " Built with Ruby on rails to provide financial literacy material.",
+    id: 1
   },
   {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Flix & Chill",
+    url: "https://flixnchill.netlify.com/",
+    github: "https://github.com/Nwillia3/Flix-Chill",
+    img: "../images/xoolo.png",
+    id: 2
+  },
+
+  {
+    title: "Career Hunter",
+    url: "https://careerhunter.netlify.com",
+    github: "https://github.com/Nwillia3/careerhunter",
+    img: "../images/xoolo.png",
+    id: 3
   },
   {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Book Notes",
+    url: "https://neilnotes.netlify.com/",
+    github: "https://github.com/Nwillia3/BookList2019",
+    img: "",
+    id: 4
   },
   {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Word Beater",
+    url: "https://word-beater.netlify.com/",
+    github: "https://github.com/Nwillia3/wordbeater",
+    img: "",
+    id: 5
   },
   {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Weight Converter",
+    url: "https://lbs-converter.netlify.com/",
+    github: "https://github.com/Nwillia3/weight_converter",
+    img: "",
+    id: 6
   },
+
   {
-    title: "6",
-    url: "",
-    techStack: ""
-  },
-  {
-    title: "6",
-    url: "",
-    techStack: ""
+    title: "Orgo Dojo",
+    url: "https://orgodojo.netlify.com/",
+    github: "https://github.com/Nwillia3/orgodjo",
+    img: "",
+    id: 7
   }
 ];
 
-module.exports = projects;
+export const miniProjects = [
+  {
+    title: "Weight Converter",
+    url: "https://lbs-converter.netlify.com/",
+    github: "https://github.com/Nwillia3/weight_converter",
+    img: "",
+    id: 1
+  },
 
+  {
+    title: "Orgo Dojo",
+    url: "https://orgodojo.netlify.com/",
+    github: "https://github.com/Nwillia3/orgodjo",
+    img: "",
+    id: 2
+  },
+  {
+    title: "Comparly : Coming Soon",
+    url: "https://orgodojo.netlify.com/",
+    github: "https://github.com/Nwillia3/orgodjo",
+    img: "",
+    id: 3
+  }
+];
 // titles: [
 //     "Vidly",
 //     "Flix & Chill",

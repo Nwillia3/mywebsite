@@ -3,6 +3,18 @@
   font-family: "Arial Black";
 }
 
+.text-center {
+  font-size: 24px;
+  margin-top: 10px;
+  font-family: "Arial Black";
+}
+
+.desc-text-center {
+  font-size: 14px;
+  margin: 10px;
+  font-family: "Arial Black";
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .text-center h1 {

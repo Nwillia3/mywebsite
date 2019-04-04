@@ -1,26 +1,43 @@
 import React, { Component } from "react";
-import Project from "./project";
-import data from "../common/data";
+import Project from "./Project";
+import { data, miniProjects } from "../common/data";
 
 class Projects extends Component {
   state = {
-    portfolio: { data }
+    portfolio: { data },
+    demos: { miniProjects }
   };
 
-  renderUrl = url => {
-    return this.state.portfolio.data.url;
-  };
+  // renderUrl = url => {
+  //   return this.state.portfolio.data.url;
+  // };
 
-  renderDescription = text => {
-    return this.state.portfolio.description[text];
-  };
+  // renderDescription = text => {
+  //   return this.state.portfolio.description[text];
+  // };
   render() {
     const { data } = this.state.portfolio;
+    const { miniProjects } = this.state.demos;
     return (
       <div className="container">
         <div className="row">
           {data.map(pro => (
-            <div className="col-md-4 col-sm-12">
+            <div className="col-md-4 col-sm-12" key={pro.id}>
+              <Project
+                header={pro.title}
+                url={pro.url}
+                description={pro.description}
+                key={pro.id}
+              />
+              <br />
+            </div>
+          ))}
+        </div>
+        <br />
+        <h1 className="text-center"> Mini Projects </h1>
+        <div className="row">
+          {miniProjects.map(pro => (
+            <div className="col-md-4 col-sm-12" key={pro.id}>
               <Project
                 header={pro.title}
                 url={pro.url}
@@ -29,17 +46,6 @@ class Projects extends Component {
               <br />
             </div>
           ))}
-          {/* {titles.map(pro => (
-            <div className="col-md-4 col-sm-12">
-              <Project
-                header={pro}
-                image={imageUrl}
-                github={this.renderUrl(titles.indexOf(github))}
-                description={this.renderDescription(titles.indexOf(pro))}
-              />
-              <br />
-            </div>
-          ))} */}
         </div>
       </div>
     );
