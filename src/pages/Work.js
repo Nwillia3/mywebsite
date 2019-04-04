@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../logo.jpg";
 import "../styles/Work.css";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navBar";
 const Work = () => {
   return (
     <React.Fragment>

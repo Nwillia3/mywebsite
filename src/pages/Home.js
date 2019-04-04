@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import NavBar from "../components/NavBar";
-import Header from "../components/Header";
-import Principles from "../components/Principles";
-import About from "../components/About";
-import Projects from "../common/Projects";
+import NavBar from "../components/navBar";
+import Header from "../components/header";
+import Principles from "../components/principles";
+import About from "../components/about";
+import Projects from "../common/projects";
 
 class Home extends Component {
   state = {};
