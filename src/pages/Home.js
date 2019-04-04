@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/navBar";
 import Header from "../components/header";
 import Principles from "../components/Principles";
-import About from "../components/about";
+import About from "../components/About";
 import Projects from "../common/projects";
 
 class Home extends Component {
