@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/navBar";
 import Header from "../components/header";
-import Principles from "../components/principles";
+import Principles from "../components/Principles";
 import About from "../components/about";
 import Projects from "../common/projects";
 
