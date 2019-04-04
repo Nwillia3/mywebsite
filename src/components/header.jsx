@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,9 +9,13 @@ const Header = () => {
         <div className="col-md-6">
           <h2 className="header-primary ">
             I Like To Build Things... Check These Out
-            <a className="btn btn-dark btn-lg" style={{ marginLeft: "10px" }}>
-              My CV
-            </a>
+            <Link
+              className="btn btn-dark btn-lg"
+              style={{ marginLeft: "20px", color: "white" }}
+              to="/projects"
+            >
+              Projects
+            </Link>
           </h2>
         </div>
         <div className="col-md-6">

@@ -1,5 +1,5 @@
 .text-center h1 {
-  font-size: 28px;
+  font-size: 35px;
   font-family: "Arial Black";
 }
 
@@ -18,7 +18,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .text-center h1 {
-    font-size: 35px;
+    font-size: 55px;
   }
 }
 

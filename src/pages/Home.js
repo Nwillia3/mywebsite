@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/navBar";
 import Header from "../components/header";
-import Bio from "../components/bio";
+// import Bio from "../components/bio";
 import ProjectTitle from "../components/project-title";
 import Projects from "../common/Projects";
 import Principles from "../components/Principles";
@@ -13,7 +13,7 @@ class Home extends Component {
       <React.Fragment>
         <NavBar />
         <Header />
-        <Bio />
+        {/* <Bio /> */}
         <ProjectTitle />
         <Projects />
         <Principles />

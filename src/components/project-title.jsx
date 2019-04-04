@@ -4,7 +4,7 @@ import "../styles/projectTitle.css";
 const ProjectTitle = () => {
   return (
     <div className="text-center" style={{ padding: 20 }}>
-      <h1>My Portfolio</h1>
+      <h1>Portfolio Highlights</h1>
     </div>
   );
 };
