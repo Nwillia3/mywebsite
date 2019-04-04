@@ -1,0 +1,20 @@
+.About h1 {
+  margin: 100px auto;
+  font-family: "Arial Black";
+  border: 2px solid black;
+  padding: 40px;
+}
+
+span {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .About h1 {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}

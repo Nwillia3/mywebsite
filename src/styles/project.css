@@ -1,0 +1,52 @@
+.text-center h1 {
+  font-size: 35px;
+  font-family: "Arial Black";
+}
+
+.text-center {
+  font-size: 24px;
+  margin-top: 10px;
+  font-family: "Arial Black";
+}
+
+.desc-text-center {
+  font-size: 14px;
+  margin: 10px;
+  font-family: "Arial Black";
+}
+.details {
+  font-size: 24px;
+  margin-top: 10px;
+  font-family: "Arial Black";
+  display: flex;
+  justify-content: center;
+}
+
+.Project {
+  margin-bottom: 40px;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-center h1 {
+    font-size: 55px;
+  }
+
+  .Project {
+    margin-bottom: 60px;
+  }
+}
+
+.button {
+  box-shadow: 10px 10px 5px grey;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Project {
+    margin-bottom: 100px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
