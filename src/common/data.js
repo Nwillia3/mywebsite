@@ -5,7 +5,7 @@ export const data = [
     github: "https://github.com/Nwillia3/xoolo",
     img: "../images/xoolo.png",
     description:
-      " Built with Ruby on rails to provide financial literacy material.",
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .",
     id: 1
   },
   {
@@ -13,6 +13,8 @@ export const data = [
     url: "https://flixnchill.netlify.com/",
     github: "https://github.com/Nwillia3/Flix-Chill",
     img: "../images/xoolo.png",
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .",
     id: 2
   },
 
@@ -21,6 +23,8 @@ export const data = [
     url: "https://careerhunter.netlify.com",
     github: "https://github.com/Nwillia3/careerhunter",
     img: "../images/xoolo.png",
+    description:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .",
     id: 3
   }
 ];

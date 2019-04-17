@@ -9,11 +9,9 @@ import {
 } from "../common/breakpoints";
 
 import styled from "styled-components";
+import { Container } from "../common/templateStyles";
 
 const Header = () => {
-  const Container = styled.div`
-    width: 100%;
-  `;
   const Head = styled.div`
     display: flex
     flex-direction: row
@@ -35,34 +33,26 @@ const Header = () => {
 
 
   @media (max-width: ${SMALL_BREAKPOINT}) {
-    max-width: 540px
     flex-direction: column
 
     > h2 {
       font-size: 40px
     }
 
-    
-
-
   } 
 
     
   @media (max-width: ${MEDIUM_BREAKPOINT}) {
-    max-width: 720px
     flex-direction: column
 
   }
 
 
-
   @media (min-width: ${LARGE_BREAKPOINT}) {
-    max-width: 992px
   }
 
 
   @media (min-width: ${XLARGE_BREAKPOINT}) {
-    max-width: 1140px
 
   }
 
