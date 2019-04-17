@@ -1,24 +1,30 @@
 .text-center h1 {
   font-size: 35px;
-  font-family: "Arial Black";
+  /* font-family: "Arial Black";
+   */
+  font-family: canada-type-gibson, sans-serif;
 }
 
 .text-center {
   font-size: 24px;
   margin-top: 10px;
-  font-family: "Arial Black";
+  /* font-family: "Arial Black"; */
+  font-family: canada-type-gibson, sans-serif;
 }
 
 .desc-text-center {
   font-size: 14px;
   margin: 10px;
-  font-family: "Arial Black";
+  /* font-family: "Arial Black"; */
+  font-family: canada-type-gibson, sans-serif;
 }
 .details {
   font-size: 24px;
   margin-top: 10px;
-  font-family: "Arial Black";
+  /* font-family: "Arial Black"; */
   display: flex;
+  font-family: canada-type-gibson, sans-serif;
+
   justify-content: center;
 }
 

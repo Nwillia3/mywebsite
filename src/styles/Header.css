@@ -1,15 +1,17 @@
 .bgColor {
-  background-color: rgb(255, 227, 0);
+  background-color: #fff;
 }
 
 .jumbo {
-  background-color: rgb(255, 227, 0);
+  background-color: #fff);
   padding: 4rem 2rem 4rem 0;
 }
 
 .header-primary {
-  font-size: 45px;
-  font-family: "Arial Black";
+  font-size: 1.777778rem;
+  font-family: canada-type-gibson, sans-serif;
+
+  /* font-family: "Arial Black"; */
 }
 
 .btn {
@@ -19,21 +21,21 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-primary {
-    font-size: 45px;
+    /* font-size: 45px; */
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .header-primary {
-    font-size: 55px;
+    /* font-size: 55px; */
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .header-primary {
-    font-size: 73px;
+    /* font-size: 73px; */
   }
 }
 
