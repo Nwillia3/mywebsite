@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Project from "./project";
 import { data, miniProjects } from "../common/data";
-import ProjectTitle from "../components/project-title";
 import "../styles/project.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -16,10 +15,9 @@ import {
 const Content = styled.div`
   background: #f9faff
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding: 30px 15px 50px 15px;
 
   @media (max-width: ${SMALL_BREAKPOINT}) {
   }
@@ -77,7 +75,7 @@ class Projects extends Component {
       <React.Fragment>
         <Title> Portfolio Highlights</Title>
 
-        <Content>
+        <Content className="check">
           <Work>
             {data.map(pro => (
               <div key={pro.id}>

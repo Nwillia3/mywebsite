@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import NavBar from "../components/navBar";
 import Header from "../components/header";
 import Principles from "../components/Principles";
-import About from "../components/About";
 import Projects from "../common/projects";
+import More from "../components/More";
 
 class Home extends Component {
   state = {};
@@ -13,8 +13,8 @@ class Home extends Component {
         <NavBar />
         <Header />
         <Projects />
-        <About />
         <Principles />
+        <More />
       </React.Fragment>
     );
   }
