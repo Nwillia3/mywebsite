@@ -13,6 +13,9 @@ const NavBar = () => {
         NW
       </a>
       <div className="ml-auto ">
+        <Link className="navbar-branded" to="/about" rel="noopener noreferrer">
+          About
+        </Link>
         <a
           className="navbar-branded"
           href="https://www.linkedin.com/in/neilwilliams9/"

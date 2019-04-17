@@ -17,6 +17,12 @@ body {
   height: 100%;
 }
 
+p {
+  font-family: canada-type-gibson, sans-serif;
+  line-height: normal;
+  font-size: 19.555px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
