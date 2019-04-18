@@ -30,4 +30,8 @@ const Container = styled.div`
   }
 `;
 
-export { Container };
+const Wrapper = styled.div`
+  background: #f9faff;
+`;
+
+export { Container, Wrapper };

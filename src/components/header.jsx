@@ -15,17 +15,30 @@ const Header = () => {
   const Head = styled.div`
     display: flex
     flex-direction: row
-    height: 75vh
+    height: 90vh
     justify-content: center
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    color: #5982ff;
 
     >img {
       width: 100%
       height: 67%
+    }
+
+    a {
+      background: linear-gradient(270deg,#297cfe 0,#24dfbe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    a:hover {
+      -webkit-text-fill-color: red;
+      text-decoration: none;
     }
 
 
@@ -34,18 +47,21 @@ const Header = () => {
     height: 100vh;
 
     > h2 {
-      font-size: 55px
+      font-size: 41px
     }
 
   } 
 
     
-  @media (max-width: ${MEDIUM_BREAKPOINT}) {
+  @media (max-width: 767) {
     flex-direction: column
+    
   }
      
   @media (min-width: ${MEDIUM_BREAKPOINT}) {
     margin-top: 50px;
+    height: 90vh;
+
 
 
     > h2 {
@@ -76,10 +92,10 @@ const Header = () => {
     <Container>
       <Head>
         <h2>
-          I Like To Build Things... Check These Out
-          <Link className="btn btn-dark btn-lg" to="/projects">
-            Projects
-          </Link>
+          I Like To Build Things... View My{" "}
+          <span>
+            <Link to="/projects">Projects</Link>
+          </span>
         </h2>
 
         <img

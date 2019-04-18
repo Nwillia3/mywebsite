@@ -36,45 +36,55 @@ const Principles = () => {
     }
   `;
 
+  const Spacing = styled.div`
+    margin-top: 20px
+    margin-bottom: 20px
+    padding-top:20px;
+    padding-bottom: 20px;
+  `;
+
   return (
-    <Container className="">
-      <Title> The Principles I Stand By</Title>
+    <Spacing>
+      <Container>
+        <Title> The Principles I Stand By</Title>
 
-      <div className="here">
-        <Principle>
-          <h3>Results Focused</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer
-          </p>
-        </Principle>
-        <Principle>
-          <h3> Open Minded</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer
-          </p>
-        </Principle>
+        <div className="here">
+          <Principle>
+            <h3>Results Focused</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer
+            </p>
+          </Principle>
+          <Principle>
+            <h3> Open Minded</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer
+            </p>
+          </Principle>
 
-        <Principle>
-          <h3>Adaptable Approach</h3>
-          <p>
-            I like to work in a fast-moving and unpredictable environment. I’m
-            flexible enough to deal with those changes and still meet deadlines.
-          </p>
-        </Principle>
+          <Principle>
+            <h3>Adaptable Approach</h3>
+            <p>
+              I like to work in a fast-moving and unpredictable environment. I’m
+              flexible enough to deal with those changes and still meet
+              deadlines.
+            </p>
+          </Principle>
 
-        <Principle>
-          <h3>Forward Thinking</h3>
-          <p>
-            I use a simple, clear approach to building product. I can provide
-            ideas, recommendations, and advice to help you achieve that.
-          </p>
-        </Principle>
-      </div>
-    </Container>
+          <Principle>
+            <h3>Forward Thinking</h3>
+            <p>
+              I use a simple, clear approach to building product. I can provide
+              ideas, recommendations, and advice to help you achieve that.
+            </p>
+          </Principle>
+        </div>
+      </Container>
+    </Spacing>
   );
 };
 

@@ -4,7 +4,7 @@ import { data, miniProjects } from "../common/data";
 import "../styles/project.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Container } from "./templateStyles";
+import { Container, Wrapper } from "./templateStyles";
 import {
   SMALL_BREAKPOINT,
   MEDIUM_BREAKPOINT,
@@ -13,25 +13,23 @@ import {
 } from "./breakpoints";
 
 const Content = styled.div`
-  background: #f9faff
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 30px 15px 50px 15px;
+  padding: 10px 15px 50px 15px;
 
   @media (max-width: ${SMALL_BREAKPOINT}) {
   }
 
-  @media (max-width: ${MEDIUM_BREAKPOINT}) {
+  @media (min-width: ${MEDIUM_BREAKPOINT}) {
+    padding: 30px 15px 50px 15px;
   }
 
   @media (min-width: ${LARGE_BREAKPOINT}) {
-    padding: auto 130px
-
+    padding: auto 130px;
   }
 
   @media (min-width: ${XLARGE_BREAKPOINT}) {
-    padding: auto 130px
+    padding: auto 130px;
   }
 `;
 
@@ -42,9 +40,15 @@ const Title = styled.h2`
   color: #5982ff;
   font-weight: 700;
   line-height: 1;
-  margin: 0 3px;
-  padding: 0;
+
+  margin: 5px 15px;
+  padding: 10px 17px;
   font-size: 2.8rem;
+
+  @media (min-width: ${MEDIUM_BREAKPOINT}) {
+    margin: 5px 3px;
+    padding: 10px;
+  }
 `;
 
 const Work = styled.div`
@@ -61,6 +65,9 @@ const Work = styled.div`
   @media (max-width: ${MEDIUM_BREAKPOINT}) {
     flex-direction: column;
   }
+
+  @media (min-width: ${MEDIUM_BREAKPOINT}) {
+  }
 `;
 
 class Projects extends Component {
@@ -72,25 +79,28 @@ class Projects extends Component {
   render() {
     const { data } = this.state.portfolio;
     return (
-      <React.Fragment>
-        <Title> Portfolio Highlights</Title>
+      <Wrapper>
+        <Container>
+          <Title> Portfolio Highlights</Title>
 
-        <Content className="check">
-          <Work>
-            {data.map(pro => (
-              <div key={pro.id}>
-                <Project
-                  header={pro.title}
-                  url={pro.url}
-                  description={pro.description}
-                  key={pro.id}
-                />
-                <br />
-              </div>
-            ))}
-          </Work>
-        </Content>
-      </React.Fragment>
+          <Content className="check">
+            <Work>
+              {data.map(pro => (
+                <div key={pro.id}>
+                  <Project
+                    header={pro.title}
+                    url={pro.url}
+                    github={pro.github}
+                    description={pro.description}
+                    key={pro.id}
+                  />
+                  <br />
+                </div>
+              ))}
+            </Work>
+          </Content>
+        </Container>
+      </Wrapper>
     );
   }
 }

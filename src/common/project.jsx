@@ -15,7 +15,7 @@ import {
 
 // impor
 
-const Project = ({ header, url, description }) => {
+const Project = ({ header, url, description, github }) => {
   const Card = styled.div`
     position: relative;
     display: flex;
@@ -47,21 +47,73 @@ const Project = ({ header, url, description }) => {
     @media (min-width: ${XLARGE_BREAKPOINT}) {
     }
   `;
+  const Style = styled.div`
+    .text {
+      font-size: 30px
+      flex-direction: row;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    a {
+      margin-left: 10px;
+    }
 
+    @media (min-width: ${MEDIUM_BREAKPOINT}) {
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background: linear-gradient(270deg, #297cfe 0, #24dfbe 100%);
+      }
+
+      .here:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        font-size: 30px
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+  `;
   return (
     <Container>
-      <Card className="here">
-        {/*  header and description for each project */}
-        <div className="text-center"> {header} </div>
-        <p>
-          {description}
-
-          <span>
-            {" "}
-            <Link to="/projects"> Project </Link>
-          </span>
-        </p>
-      </Card>
+      <Style className="look">
+        <Card className="here">
+          {/*  header and description for each project */}
+          <div className="text-center"> {header} </div>
+          <p>{description}</p>
+          <div className="overlay">
+            <div className="text">
+              <a href={url} target="_blank">
+                <FontAwesomeIcon icon={["fab", "github"]} />
+              </a>
+              <a href={github} target="_blank">
+                <FontAwesomeIcon icon={faLink} />
+              </a>
+            </div>
+          </div>
+        </Card>
+      </Style>
     </Container>
   );
 };
