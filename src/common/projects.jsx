@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Project from "./project";
 import { data, miniProjects } from "../common/data";
-import "../styles/project.css";
-import { Link } from "react-router-dom";
+// import "../styles/project.css";
 import styled from "styled-components";
 import { Container, Wrapper } from "./templateStyles";
 import {

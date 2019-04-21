@@ -1,38 +1,51 @@
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.carded {
-  position: relative;
+.container {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 768px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.main {
   flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
+  /* box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12),
+    0 5px 15px rgba(0, 0, 0, 0.06); */
+  /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); */
+}
 
-  border-radius: 0.25rem;
+.main:hover {
+  transform: translateY(-5px);
+  transition: all 0.15s ease;
+}
+
+.box {
+  justify-content: center;
+  box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12),
+    0 5px 15px rgba(0, 0, 0, 0.06);
+  padding-bottom: 56.25%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  background-image: url("https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/homepage/sc-bad-about.png");
+  background-size: cover !important;
+}
+
+.text {
+  box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12),
+    0 5px 15px rgba(0, 0, 0, 0.06);
   display: flex;
-  margin: 10px;
-  height: 200px;
-  background-color: #00ffe1;
-  border-radius: 5px;
-  color: black;
-  box-shadow: 10px 10px 5px grey;
+  padding: 1.5rem;
+  flex: 1 !important;
+  background: #fff;
+  line-height: 1.25;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text h3 {
+  color: #0c1e29 !important;
+  margin-bottom: 1rem !important;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -49,17 +62,6 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .carded:hover .image {
-    opacity: 0.9;
-  }
-
-  .carded:hover .middle {
-    opacity: 1;
-  }
-
-  .card-body {
-    display: none;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
