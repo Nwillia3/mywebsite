@@ -35,16 +35,16 @@ const More = () => {
           <p>
             Besides living my life tethered to screens and slowly succumbing to
             the harsh bite of fluorescent lights, I also spend some of my time
-            with books. If you're interested, here's a peek at
-            <span> what I'm reading. </span>
+            with books. If you're interested, here's a peek at {""}
+            <Link to="/library"> what I'm reading</Link>.
             <br />
             <br />
             For more about me, view my <Link to="/about">about page, </Link>
             and for the TLDR version, there's my <span> resume / CV. </span>
             <br />
             <br />
-            For everything else, you can reach me at{" "}
-            <a href="mailtoNeil.Wlliams227@gmail.com:">
+            For everything else, you can reach me at {""}
+            <a href="mailto:Neil.Wlliams227@gmail.com" target="_blank">
               Neil.Wlliams227@gmail.com
             </a>
             .

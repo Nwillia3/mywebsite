@@ -29,17 +29,9 @@ const Header = () => {
       height: 67%
     }
 
-    a {
-      background: linear-gradient(270deg,#297cfe 0,#24dfbe 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-    }
-
-    a:hover {
-      -webkit-text-fill-color: red;
-      text-decoration: none;
-    }
+   a {
+     text-decoration: underline;
+   }
 
 
   @media (max-width: ${SMALL_BREAKPOINT}) {

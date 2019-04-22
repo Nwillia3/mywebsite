@@ -1,12 +1,13 @@
 .navbar {
   background-color: #fff;
+  font-family: sans-serif;
 }
 
 .navbar-branded {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: inherit;
   white-space: nowrap;
   color: #333;
@@ -14,8 +15,12 @@
   font-weight: 600;
 }
 
+.navbar-branded a {
+  text-decoration: none;
+}
+
 a:hover {
-  color: red;
+  color: black;
 }
 
 /* Extra small devices (phones, 600px and down) */

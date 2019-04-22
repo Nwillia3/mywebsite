@@ -65,7 +65,7 @@ const Library = () => {
             <IMG src={book} />
           </BookWrapper>
 
-          <div className="text">
+          <div style={{ margin: "auto 10px" }}>
             <Title>What I'm reading</Title>
             <p>
               Just a few pieces of writing that I enjoy, that I hope you might
@@ -78,7 +78,7 @@ const Library = () => {
           </div>
         </Wrap>
 
-        <h1> LIST COMING SOON</h1>
+        <Title> LIST COMING SOON</Title>
       </Container>
     </React.Fragment>
   );
